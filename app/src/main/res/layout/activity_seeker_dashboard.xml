@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/app_bar_main" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_400" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#403838"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <FrameLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/donut_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:elevation="5dp"
+                            android:rotation="270"
+                            app:donut_finished_color="@color/dark_green"
+                            app:donut_finished_stroke_width="5dp"
+                            app:donut_progress="30"
+                            app:donut_text_color="@android:color/transparent"
+                            app:donut_unfinished_color="@color/white"
+                            app:donut_unfinished_stroke_width="5dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImageView"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/dp"
+                            app:civ_border_color="@color/gray_500" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            app:textFontFace="REGULAR" />
+
+                        <!--<com.app.workingbeez.widgets.DTextView-->
+                        <!--style="@style/txt_gray_50_10"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/app_name"-->
+                        <!--app:textFontFace="REGULAR" />-->
+
+                        <RatingBar
+                            style="@style/RatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:numStars="5"
+                            android:progressDrawable="@drawable/ratingbar"
+                            android:rating="3.5"
+                            android:stepSize="0.1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/hint_year_earn_" />
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text=":" />
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/hint_year_earn_" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/hint_pending_earn_" />
+
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text=":" />
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="$10000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/hint_response_rate" />
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text=":" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    app:srcCompat="@drawable/ic_responce_rate_up" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            app:srcCompat="@drawable/ic_share" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <FrameLayout
+                    android:id="@+id/flSeekerDashboardSavedJobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_circle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            app:srcCompat="@drawable/ic_blank_heart" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/hint_saved" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/hint_jobs" />
+
+
+                    </LinearLayout>
+
+                    <com.app.workingbeez.widgets.DTextView
+                        style="@style/txt_gray_50_10"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_circle_"
+                        android:gravity="center"
+                        android:text="10"
+                        app:textFontFace="SEMI_BOLD" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flSeekerDashboardJobHub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_circle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            app:srcCompat="@drawable/ic_job_hub" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/hint_job" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/hint_hub" />
+
+
+                    </LinearLayout>
+
+                    <com.app.workingbeez.widgets.DTextView
+                        style="@style/txt_gray_50_10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/ic_circle_"
+                        android:gravity="center"
+                        android:text="2"
+                        app:textFontFace="SEMI_BOLD" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flSeekerDashboardJobCalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_circle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            app:srcCompat="@drawable/ic_job_calender" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/hint_job" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_gray_50_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/hint_calender" />
+
+                    </LinearLayout>
+
+                    <com.app.workingbeez.widgets.DTextView
+                        style="@style/txt_gray_50_10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/ic_circle_"
+                        android:gravity="center"
+                        android:text="2"
+                        app:textFontFace="SEMI_BOLD" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/hr_line" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cross_line_right" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cross_line" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cross_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_18"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/ic_circle_"
+                                android:gravity="center"
+                                android:text="500"
+                                app:textFontFace="LIGHT" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_txt_secondary_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/hint_applied"
+                                    app:textFontFace="SEMI_BOLD" />
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_txt_secondary_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-3dp"
+                                    android:gravity="center"
+                                    android:text="@string/hint_jobs__"
+                                    app:textFontFace="SEMI_BOLD" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-40dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="5dp"
+                               >
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_gray_50_18"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/ic_circle_"
+                                    android:gravity="center"
+                                    android:text="500"
+                                    app:textFontFace="LIGHT" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/hint_applied"
+                                        app:textFontFace="SEMI_BOLD" />
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-3dp"
+                                        android:gravity="center"
+                                        android:text="@string/hint_jobs__"
+                                        app:textFontFace="SEMI_BOLD" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="5dp">
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_gray_50_18"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/ic_circle_"
+                                    android:gravity="center"
+                                    android:text="500"
+                                    app:textFontFace="LIGHT" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/hint_applied"
+                                        app:textFontFace="SEMI_BOLD" />
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-3dp"
+                                        android:gravity="center"
+                                        android:text="@string/hint_jobs__"
+                                        app:textFontFace="SEMI_BOLD" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="5dp">
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_gray_50_18"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/ic_circle_"
+                                    android:gravity="center"
+                                    android:text="500"
+                                    app:textFontFace="LIGHT" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/hint_applied"
+                                        app:textFontFace="SEMI_BOLD" />
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-3dp"
+                                        android:gravity="center"
+                                        android:text="@string/hint_jobs__"
+                                        app:textFontFace="SEMI_BOLD" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="5dp">
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_gray_50_18"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/ic_circle_"
+                                    android:gravity="center"
+                                    android:text="500"
+                                    app:textFontFace="LIGHT" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/hint_applied"
+                                        app:textFontFace="SEMI_BOLD" />
+
+                                    <com.app.workingbeez.widgets.DTextView
+                                        style="@style/txt_txt_secondary_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-3dp"
+                                        android:gravity="center"
+                                        android:text="@string/hint_jobs__"
+                                        app:textFontFace="SEMI_BOLD" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-50dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.app.workingbeez.widgets.DTextView
+                                style="@style/txt_gray_50_18"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/ic_circle_"
+                                android:gravity="center"
+                                android:text="500"
+                                app:textFontFace="LIGHT" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_txt_secondary_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/hint_applied"
+                                    app:textFontFace="SEMI_BOLD" />
+
+                                <com.app.workingbeez.widgets.DTextView
+                                    style="@style/txt_txt_secondary_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-3dp"
+                                    android:gravity="center"
+                                    android:text="@string/hint_jobs__"
+                                    app:textFontFace="SEMI_BOLD" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_circle_">
+
+                    <com.app.workingbeez.widgets.DTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/app_name" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

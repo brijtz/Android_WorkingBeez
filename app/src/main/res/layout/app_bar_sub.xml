@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Toolbar"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    android:title=""
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:theme="@style/Base.Theme.AppCompat.Light">
+
+    <FrameLayout
+        android:id="@+id/flBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_back" />
+
+    </FrameLayout>
+
+    <com.app.workingbeez.widgets.DTextView
+        android:id="@+id/tvTitle"
+        style="@style/txt_txt_primary_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:textFontFace="SEMI_BOLD" />
+
+
+</android.support.v7.widget.Toolbar>
+

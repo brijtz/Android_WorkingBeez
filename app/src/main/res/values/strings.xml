@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">WorkingBeez</string>
+
+    <string name="facebook_app_id">235100586900254</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="err_username">Enter Username</string>
+    <string name="err_email_invalid">Invalid email address</string>
+    <string name="err_password">Enter password</string>
+    <string name="err_password_match">New password and confirm password must same</string>
+    <string name="err_firstname">Enter FirstName</string>
+    <string name="err_lastname">Enter LastName</string>
+    <string name="internet_err">No Internet Connection</string>
+
+    <string name="hint_forgot_password">Forgot Password?</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are you sure want to logout?</string>
+
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_yes">Yes</string>
+    <string name="hint_no">No</string>
+    <string name="hint_ok">Ok</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_submit">Submit</string>
+    <string name="hint_delete">Delete</string>
+    <string name="hint_edit">Edit</string>
+    <string name="hint_confirm_delete">Are you sure You want to delete this item?</string>
+
+    <string name="msg_permission_expln_dialog"> Permission is required to proceed</string>
+    <string name="hint_allow">ALLOW</string>
+    <string name="hint_deny">DENY</string>
+
+    <string name="msg_no_data_found">No Data Found</string>
+    <string name="msg_exception">Exception</string>
+    <string name="hint_login">LOGIN</string>
+    <string name="hint_sign_in">Sign In</string>
+    <string name="hint_sign_up_label">Dont have an account?</string>
+    <string name="hint_sign_up">Sign Up</string>
+    <string name="hint_sign_in_with">Sign In\nWith</string>
+    <string name="hint_terms_condition">By signing up you are agree to our terms and condition</string>
+    <string name="hint_year_earn_">Year Earn</string>
+    <string name="hint_pending_earn_">Pending Earn</string>
+    <string name="hint_response_rate">Response Rate</string>
+    <string name="hint_saved">SAVED</string>
+    <string name="hint_jobs">JOBS</string>
+    <string name="hint_job">JOB</string>
+    <string name="hint_hub">HUB</string>
+    <string name="hint_calender">CALENDAR</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_date_of_birth">Date of birth</string>
+    <string name="hint_gender_">Gender :</string>
+    <string name="hint_male">Male</string>
+    <string name="hint_female">Female</string>
+    <string name="hint_other">Other</string>
+    <string name="hint_abn">ABN</string>
+    <string name="hint_general_information">General Information</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_working_range">Working range</string>
+    <string name="hint_do_you_have_vehical">Do you have vehicle?</string>
+    <string name="hint_already_account">Already have an account?</string>
+    <string name="hint_next">Next</string>
+    <string name="title_general_information">General Information</string>
+    <string name="title_seeker_registration">Seeker Registration</string>
+    <string name="hint_select_category">Select Category</string>
+    <string name="hint_search_and_select">Search and select</string>
+    <string name="title_job_title">Job Title</string>
+    <string name="hint_selected_title">Selected Title</string>
+    <string name="title_certification">Certification</string>
+    <string name="title_upload_certification">Upload Certificate</string>
+    <string name="hint_core_skills">Core Skills</string>
+    <string name="hint_select_max_8">Select Max. 8</string>
+    <string name="title_core_skills">Core Skills</string>
+    <string name="title_experience">Experience</string>
+    <string name="msg_experience">Have you previously worked in</string>
+    <string name="title_poster_registration">Poster Registration</string>
+    <string name="hint_selected_category">Selected Category</string>
+    <string name="hint_finish">Finish</string>
+    <string name="title_poster_category">Category</string>
+    <string name="hint_chat">Chat</string>
+    <string name="hint_applied">Applied</string>
+    <string name="hint_jobs__">Jobs</string>
+    <string name="hint_additional_details">Additional Details</string>
+    <string name="hint_name_of_business">Name of business</string>
+    <string name="hint_about_you_business">About you / Business</string>
+    <string name="hint_website_url">Website URL</string>
+    <string name="err_fname">Enter First Name</string>
+    <string name="err_lname">Enter Last Name</string>
+    <string name="err_email">Enter username</string>
+    <string name="err_about_you_business">Enter about you or your business</string>
+    <string name="err_location">Select your location</string>
+
+</resources>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_200"
+                    android:padding="10dp">
+
+                    <com.kofigyan.stateprogressbar.StateProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:spb_checkStateCompleted="true"
+                        app:spb_currentStateDescriptionColor="#009688"
+                        app:spb_currentStateNumber="one"
+                        app:spb_maxStateNumber="three"
+                        app:spb_stateBackgroundColor="@color/gray_500"
+                        app:spb_stateDescriptionColor="@color/app_blue"
+                        app:spb_stateForegroundColor="@color/app_blue"
+                        app:spb_stateLineThickness="2px"
+                        app:spb_stateNumberBackgroundColor="@color/app_blue"
+                        app:spb_stateNumberForegroundColor="@color/gray_50" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_600"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:src="@drawable/dp"
+                        app:civ_border_color="#ffffff"
+                        app:civ_border_width="5dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <com.app.workingbeez.widgets.DTextView
+                style="@style/txt_txt_primary_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/title_general_information" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_firstname"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_last_name"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_date_of_birth"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_gender_" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.rey.material.widget.RadioButton
+                                style="@style/txt_txt_secondary_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="@string/hint_male" />
+
+                            <com.rey.material.widget.RadioButton
+                                style="@style/txt_txt_secondary_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="@string/hint_female" />
+
+                            <com.rey.material.widget.RadioButton
+                                style="@style/txt_txt_secondary_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="@string/hint_other" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_abn"
+                            android:inputType="text"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_location"
+                            android:inputType="text"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/secondaryText"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:ems="15"
+                            android:hint="@string/hint_working_range"
+                            android:inputType="text"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_do_you_have_vehical" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.rey.material.widget.RadioButton
+                                style="@style/txt_txt_secondary_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="@string/hint_yes" />
+
+                            <com.rey.material.widget.RadioButton
+                                style="@style/txt_txt_secondary_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:text="@string/hint_no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/flAlreadyHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground">
+
+                <com.app.workingbeez.widgets.DTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/hint_already_account"
+                    android:textColor="@color/app_blue"
+                    app:textFontFace="SEMI_BOLD" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

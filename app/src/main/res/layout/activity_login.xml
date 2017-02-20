@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background_"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clipChildren="false"
+            android:innerRadius="0dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="2dp"
+            app:contentPaddingBottom="16dp">
+
+            <com.app.workingbeez.widgets.DTextView
+                style="@style/txt_gray_50_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/hint_sign_in"
+                app:textFontFace="BOLD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            android:id="@+id/etLoginEmail"
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_email_"
+                            android:drawablePadding="10dp"
+                            android:ems="15"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextAppearence.App.TextInputLayout_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:hintAnimationEnabled="true">
+
+                        <com.app.workingbeez.widgets.DEditText
+                            android:id="@+id/etLoginPassword"
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_password_"
+                            android:drawablePadding="10dp"
+                            android:ems="15"
+                            android:hint="@string/hint_password"
+                            android:inputType="text"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_600" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.app.workingbeez.widgets.DTextView
+                        android:id="@+id/tvForgotPassword"
+                        style="@style/txt_txt_secondary_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="8dp"
+                        android:text="@string/hint_forgot_password"
+                        app:textFontFace="SEMI_BOLD" />
+
+                    <com.app.workingbeez.widgets.DButtonMaterial
+                        android:id="@+id/btnLogin"
+                        style="@style/LightFlatWaveColorButtonRippleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_bg"
+                        android:text="@string/hint_sign_in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:buttonTextFontFace="BOLD" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.app.workingbeez.widgets.DTextView
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_sign_up_label"
+                            app:textFontFace="SEMI_BOLD" />
+
+                        <com.app.workingbeez.widgets.DTextView
+                            android:id="@+id/tvSignUp"
+                            style="@style/txt_txt_secondary_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="8dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:padding="8dp"
+                            android:text="@string/hint_sign_up"
+                            android:textColor="@color/dark_green"
+                            app:textFontFace="SEMI_BOLD" />
+
+                    </LinearLayout>
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/fbLoginBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="30dp"
+                        android:visibility="gone" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/gplusLoginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_circle_"
+        android:tint="@color/dark_green"
+        app:layout_anchor="@id/cardLogin"
+        app:layout_anchorGravity="bottom|center_horizontal">
+
+        <com.app.workingbeez.widgets.DTextView
+            style="@style/txt_gray_50_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hint_sign_in_with" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:tint="@color/white"
+            app:backgroundTint="@color/com_facebook_blue"
+            app:fabSize="auto"
+            app:srcCompat="@drawable/ic_facebook" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabGPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_gplus"
+            android:tint="@color/white"
+            app:backgroundTint="@color/gplus_button"
+            app:fabSize="auto" />
+    </LinearLayout>
+
+    <com.app.workingbeez.widgets.DTextView
+        style="@style/txt_gray_50_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/hint_terms_condition" />
+
+</android.support.design.widget.CoordinatorLayout>

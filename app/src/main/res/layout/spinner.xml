@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <com.app.workingbeez.widgets.DTextView
+            android:id="@+id/dialogtitle"
+            style="@style/txt_txt_primary_18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Spinner"
+
+            app:textFontFace="BOLD" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f3f3f3" />
+
+    <ListView
+        android:id="@+id/lvSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#e5e5e5"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:listitem="@layout/spinner_item" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1081df</color>
+    <color name="colorPrimaryDark">#0376d6</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="orange">#e8764e</color>
+    <color name="nav_header">#1B272C</color>
+    <color name="progress_bg">#66cccccc</color>
+    <color name="green">#a9cd4f</color>
+    <color name="dark_green">#46b360</color>
+    <color name="app_blue">@color/colorPrimary</color>
+    <color name="header_footer">#9fd7ec</color>
+
+    <color name="fb_button">#3a5897</color>
+    <color name="gplus_button">#dd4a39</color>
+
+    <color name="rating_color">#42DFD2</color>
+
+    <color name="expired_color">#FFCA3131</color>
+    <color name="near_by_expire_color">#C66300</color>
+
+    <color name="drawerBgColor">#333240</color>
+    <color name="drawerHeaderItemsBg">#2b2a36</color>
+    <color name="drawerItemsBgNormal">#201f28</color>
+    <color name="drawerItemsBgNormalTrans">#CC201f28</color>
+
+    <color name="trans">#00000000</color>
+    <color name="semiTrans">#88000000</color>
+
+    <color name="gray_50">#fafafa</color>
+    <color name="gray_500">#9e9e9e</color>
+    <color name="gray_100">#f5f5f5</color>
+    <color name="gray_200">#eeeeee</color>
+    <color name="gray_300">#e0e0e0</color>
+    <color name="gray_400">#bdbdbd</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+    <color name="delete">#e48207</color>
+    <color name="edit">#b5b5b5</color>
+
+    <color name="orange_400">#ffa726</color>
+    <color name="orange_900">#e65100</color>
+    <color name="systme_down">#e15d60</color>
+
+    <color name="task1">#4DD0E1</color>
+    <color name="task2">#9575CD</color>
+    <color name="task3">#FFD54F</color>
+    <color name="task4">#64B5F6</color>
+
+    <color name="communitybg">#181DC6</color>
+    <color name="add_task_trans">#d61118</color>
+    <color name="add_task_trans_bg">#ea2127</color>
+    <color name="myProfile_purple">#7d69ff</color>
+    <color name="myProfile_purple_border">#9481ff</color>
+
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="clicked_gray">#80e0e0e0</drawable>
+
+</resources>

@@ -16,7 +16,6 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -36,29 +35,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.registration.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/MatchTheme" />
-
         <activity
             android:name=".ui.dashboard.seeker.SeekerDashboardActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/MatchTheme" />
-
         <activity
             android:name=".ui.registration.seeker.SeekerRegistrationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.registration.poster.PosterRegistrationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".ui.instantiatePost.InstantiatePostActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -92,4 +92,21 @@
     <string name="err_about_you_business">Enter about you or your business</string>
     <string name="err_location">Select your location</string>
 
+
+    <!--Edited by Jalpesh-->
+    <!--TextView Text-->
+    <string name="tv_next">Next</string>
+    <string name="tv_selectAnyOne">(Select Any One)</string>
+    <string name="tv_selectedCategory">Selected Categories</string>
+
+    <!--EditText Hint-->
+    <string name="hint_searchAndOrSelect">Search and\/or select</string>
+
+    <!--Header Titles-->
+    <string name="header_category">CATEGORY</string>
+    <string name="header_jobTitle">JOB TITLE</string>
+    <string name="header_certification">CERTIFICATION</string>
+    <string name="header_coreSkill">CORE SKILLS</string>
+    <string name="header_experience">EXPERIENCE</string>
+
 </resources>

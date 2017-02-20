@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/ic_orange_round_corner_30"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.app.workingbeez.widgets.DTextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:text="asdfdsafsa"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orange_900" />
+
+    <com.app.workingbeez.widgets.DTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_orange_circle"
+        android:paddingBottom="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="2dp"
+        android:text="x"
+        android:textColor="@color/orange_900"
+        android:textStyle="bold" />
+
+</LinearLayout>

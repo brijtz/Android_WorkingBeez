@@ -55,4 +55,6 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.kofigyan.stateprogressbar:stateprogressbar:0.0.3'
     testCompile 'junit:junit:4.12'
+    //--- changed by Jalpesh --- //
+    compile 'com.wefika:flowlayout:0.4.1'
 }

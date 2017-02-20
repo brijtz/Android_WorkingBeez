@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Toolbar"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibHeaderBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <com.app.workingbeez.widgets.DTextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textAllCaps="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <com.app.workingbeez.widgets.DTextView
+            android:id="@+id/tvHeaderNext"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_next"
+            android:textAllCaps="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

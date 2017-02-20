@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.app.workingbeez.widgets.DTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_selectAnyOne"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/task4" />
+
+
+        <com.app.workingbeez.widgets.DEditText
+            android:id="@+id/etSearchCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_gray_round_corner"
+            android:hint="@string/hint_searchAndOrSelect"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/secondaryText"
+            android:textColorHint="@color/secondaryText" />
+
+        <com.app.workingbeez.widgets.FlowLayout
+            android:id="@+id/flowLayoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" />
+
+        <com.app.workingbeez.widgets.DTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_gray"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_selectedCategory"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryText" />
+
+        <com.app.workingbeez.widgets.FlowLayout
+            android:id="@+id/flowLayoutSelectedCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -55,7 +55,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.instantiatePost.InstantiatePostActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="true"
+            />
     </application>
 
 </manifest>

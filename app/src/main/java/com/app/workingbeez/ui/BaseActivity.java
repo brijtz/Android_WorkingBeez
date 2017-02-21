@@ -42,11 +42,6 @@ import cz.msebera.android.httpclient.entity.StringEntity;
  */
 public class BaseActivity extends AppCompatActivity {
 
-    // --- edited by Jalpesh --- //
-    public TextView tvHeaderTitle, tvHeaderNext;
-    public ImageButton ibHeaderBack;
-    // --- edited by Jalpesh --- //
-
     AsyncProgressDialog ad;
     private Toast toast;
 

@@ -13,8 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.app.workingbeez.R;
-import com.app.workingbeez.ui.BaseActivity;
-import com.app.workingbeez.utils.Constants;
 import com.app.workingbeez.widgets.FlowLayout;
 
 import java.util.ArrayList;
@@ -26,7 +24,7 @@ import butterknife.ButterKnife;
  * Created by oozee on 20/2/17.
  */
 
-public class CategoryFragment extends Fragment {
+public class JobTitleFragment extends Fragment {
 
     Context context;
 
@@ -48,20 +46,11 @@ public class CategoryFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-        ((InstantiatePostActivity) context).setTitle(R.string.header_category);
+        ((InstantiatePostActivity) context).setTitle(R.string.header_jobTitle);
         ((InstantiatePostActivity) context).ibHeaderBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((BaseActivity) context).finish();
-            }
-        });
-
-        ((InstantiatePostActivity) context).tvHeaderNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                JobTitleFragment fragment = new JobTitleFragment();
-                fragment.setArguments(context);
-                ((InstantiatePostActivity) context).addFragment(fragment, Constants.FRAGMENT_JOB_TITLE);
+                ((InstantiatePostActivity) context).getSupportFragmentManager().popBackStack();
             }
         });
 
@@ -70,9 +59,9 @@ public class CategoryFragment extends Fragment {
         categoryList.add("Nanny");
         categoryList.add("Childcare Leader");
         categoryList.add("Nanny");
-        categoryList.add("Childcare Leader");
-        categoryList.add("Childcare Worker");
-        categoryList.add("Out of School Hours Care (OSHC)");
+        categoryList.add("Educator");
+        categoryList.add("Daycare Teacher");
+        categoryList.add("Assistant Educator");
         categoryList.add("Childcare Worker");
         categoryList.add("Nanny");
         categoryList.add("Childcare Leader");
@@ -106,6 +95,12 @@ public class CategoryFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ((InstantiatePostActivity) context).setTitle(R.string.header_category);
     }
 
     public void setArguments(Context context) {

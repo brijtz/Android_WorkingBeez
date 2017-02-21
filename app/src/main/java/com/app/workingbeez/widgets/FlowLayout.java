@@ -13,22 +13,6 @@ public class FlowLayout extends ViewGroup {
 
     private int line_height;
 
-    public static class LayoutParams extends ViewGroup.LayoutParams {
-
-        public final int horizontal_spacing;
-        public final int vertical_spacing;
-
-        /**
-         * @param horizontal_spacing Pixels between items, horizontally
-         * @param vertical_spacing Pixels between items, vertically
-         */
-        public LayoutParams(int horizontal_spacing, int vertical_spacing) {
-            super(0, 0);
-            this.horizontal_spacing = horizontal_spacing;
-            this.vertical_spacing = vertical_spacing;
-        }
-    }
-
     public FlowLayout(Context context) {
         super(context);
     }
@@ -88,13 +72,13 @@ public class FlowLayout extends ViewGroup {
 
     @Override
     protected ViewGroup.LayoutParams generateDefaultLayoutParams() {
-        return new LayoutParams(1, 1); // default of 1px spacing
+        return new LayoutParams(10, 10); // default of 1px spacing
     }
 
     @Override
     protected ViewGroup.LayoutParams generateLayoutParams(
             ViewGroup.LayoutParams p) {
-        return new LayoutParams(1, 1);
+        return new LayoutParams(10, 10);
     }
 
     @Override
@@ -125,6 +109,22 @@ public class FlowLayout extends ViewGroup {
                 child.layout(xpos, ypos, xpos + childw, ypos + childh);
                 xpos += childw + lp.horizontal_spacing;
             }
+        }
+    }
+
+    public static class LayoutParams extends ViewGroup.LayoutParams {
+
+        public final int horizontal_spacing;
+        public final int vertical_spacing;
+
+        /**
+         * @param horizontal_spacing Pixels between items, horizontally
+         * @param vertical_spacing   Pixels between items, vertically
+         */
+        public LayoutParams(int horizontal_spacing, int vertical_spacing) {
+            super(0, 0);
+            this.horizontal_spacing = horizontal_spacing;
+            this.vertical_spacing = vertical_spacing;
         }
     }
 }

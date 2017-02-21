@@ -6,7 +6,7 @@
     android:background="@drawable/ic_orange_round_corner_30"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="10dp">
+    android:padding="5dp">
 
     <com.app.workingbeez.widgets.DTextView
         android:id="@+id/tvCategoryName"
@@ -19,6 +19,7 @@
         android:textColor="@color/orange_900" />
 
     <com.app.workingbeez.widgets.DTextView
+        android:id="@+id/tvDeselect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_orange_circle"

@@ -6,7 +6,7 @@
     android:background="@drawable/ic_blue_round_corner_30"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="10dp">
+    android:padding="5dp">
 
     <com.app.workingbeez.widgets.DTextView
         android:id="@+id/tvCategoryName"

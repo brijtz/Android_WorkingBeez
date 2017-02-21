@@ -28,6 +28,7 @@
             android:background="@drawable/ic_gray_round_corner"
             android:hint="@string/hint_searchAndOrSelect"
             android:padding="10dp"
+            android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/secondaryText"
             android:textColorHint="@color/secondaryText" />
@@ -36,7 +37,8 @@
             android:id="@+id/flowLayoutCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp" />
+            android:layout_margin="15dp"
+            android:clipToPadding="true" />
 
         <com.app.workingbeez.widgets.DTextView
             android:layout_width="match_parent"
